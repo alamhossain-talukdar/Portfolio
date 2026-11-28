@@ -1,507 +1,1266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Md. Alam Hossain – Business Analyst | ERP Implementation</title>
-<meta name="description" content="Md. Alam Hossain – Business Analyst and ERP Implementation professional with 10+ years in textile and apparel manufacturing. 15+ ERP modules, 600+ users trained, Power BI and MIS reporting." />
-<meta name="author" content="Md. Alam Hossain" />
-<meta property="og:title" content="Md. Alam Hossain – Business Analyst | ERP Implementation" />
-<meta property="og:description" content="10+ years turning textile and apparel workflows into working ERP systems." />
-<meta property="og:image" content="assets/img/profile.jpg" />
-<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Md. Alam Hossain – Business Analyst &amp; ERP Implementation Professional</title>
+<meta name="description" content="Md. Alam Hossain – Business Analyst &amp; ERP Implementation Professional with 10+ years in textile &amp; apparel manufacturing ERP, Power BI &amp; MIS reporting, Dhaka, Bangladesh."/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0e1a'/%3E%3Ctext x='32' y='43' font-family='Poppins,Arial,sans-serif' font-weight='800' font-size='30' text-anchor='middle' fill='%2310b981'%3EAH%3C/text%3E%3C/svg%3E"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Md. Alam Hossain – Business Analyst &amp; ERP Implementation Professional"/>
+<meta property="og:description" content="10+ years driving ERP digital transformation across Bangladesh's RMG &amp; Textile industries — 15+ ERP modules, 600+ users trained, 8+ Power BI dashboards, 40% automation."/>
+<meta property="og:url" content="https://alamhossain-talukdar.github.io/Portfolio/"/>
+<meta property="og:image" content="https://alamhossain-talukdar.github.io/Portfolio/assets/img/profile.jpg"/>
+<meta name="twitter:card" content="summary"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet"/>
 <style>
-  :root{
-    --indigo:#22307A;
-    --indigo-deep:#151E52;
-    --madder:#C23B4E;
-    --turmeric:#E0A21B;
-    --teal:#0E8A80;
-    --violet:#6A4BB5;
-    --ink:#1B2033;
-    --muted:#5A6178;
-    --line:#E2E5EF;
-    --paper:#F6F7FB;
-    --white:#FFFFFF;
-    --display:"Bricolage Grotesque", system-ui, sans-serif;
-    --body:"IBM Plex Sans", system-ui, sans-serif;
-    --wrap:1120px;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper)}
-  img{max-width:100%;display:block}
-  a{color:var(--indigo)}
-  a:focus-visible,button:focus-visible{outline:3px solid var(--turmeric);outline-offset:3px;border-radius:6px}
-  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
-  h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;color:var(--ink)}
-  h2{font-size:clamp(1.9rem,3.4vw,2.6rem);font-weight:800;letter-spacing:-.02em}
-  h3{font-size:1.3rem;font-weight:700;letter-spacing:-.01em}
-  p{margin:0}
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#0a0e1a;color:#e8eaf0;line-height:1.7;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
 
-  /* ---------- Top bar ---------- */
-  .topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .brand{font-family:var(--display);font-weight:800;font-size:1.2rem;color:var(--indigo-deep);text-decoration:none;display:flex;align-items:center;gap:10px}
-  .brand-mark{width:30px;height:30px;border-radius:50%;background:conic-gradient(var(--indigo) 0 25%,var(--madder) 0 50%,var(--turmeric) 0 75%,var(--teal) 0)}
-  .nav{display:flex;gap:4px}
-  .nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem;padding:8px 12px;border-radius:8px}
-  .nav a:hover{color:var(--indigo);background:#EEF0FA}
-  .menu-btn{display:none;background:none;border:0;font-size:1.4rem;color:var(--indigo-deep);cursor:pointer;padding:8px}
+/* ===== CSS VARIABLES ===== */
+:root{
+  --navy:#0a0e1a;
+  --navy2:#111827;
+  --navy3:#1a2235;
+  --navy4:#243047;
+  --emerald:#10b981;
+  --emerald2:#059669;
+  --emerald3:#d1fae5;
+  --violet:#7c3aed;
+  --violet2:#a78bfa;
+  --violet3:#ede9fe;
+  --amber:#f59e0b;
+  --amber2:#fbbf24;
+  --amber3:#fef3c7;
+  --coral:#f43f5e;
+  --coral2:#fb7185;
+  --sky:#0ea5e9;
+  --sky2:#38bdf8;
+  --text1:#f1f5f9;
+  --text2:#94a3b8;
+  --text3:#64748b;
+  --border:#1e2d47;
+  --card:#111827;
+  --card2:#1a2235;
+}
 
-  /* ---------- Hero ---------- */
-  .hero{background:var(--white);padding:72px 0 0;overflow:hidden}
-  .hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:56px;align-items:center}
-  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;letter-spacing:-.035em;color:var(--indigo-deep)}
-  .role{font-family:var(--display);font-weight:500;font-size:clamp(1.1rem,1.8vw,1.35rem);color:var(--ink);margin:14px 0 22px}
-  .role span{display:inline-block;padding:2px 0;margin-right:14px;border-bottom:3px solid}
-  .role span:nth-child(1){border-color:var(--indigo)}
-  .role span:nth-child(2){border-color:var(--madder)}
-  .role span:nth-child(3){border-color:var(--teal)}
-  .lead{font-size:1.08rem;color:var(--muted);max-width:60ch}
-  .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-  .btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:.98rem;padding:13px 22px;border-radius:10px;text-decoration:none;border:2px solid transparent}
-  .btn-primary{background:var(--indigo);color:#fff}
-  .btn-primary:hover{background:var(--indigo-deep)}
-  .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
-  .btn-ghost:hover{border-color:var(--indigo);color:var(--indigo)}
-  .contact-line{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-size:.95rem;color:var(--muted)}
-  .contact-line a{color:var(--muted);text-decoration:none}
-  .contact-line a:hover{color:var(--indigo)}
-  .contact-line a,.contact-line span{display:inline-flex;align-items:center;gap:8px}
-  .contact-line svg{color:var(--indigo)}
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:#0a0e1a}
+::-webkit-scrollbar-thumb{background:#10b981;border-radius:3px}
 
-  .portrait{position:relative;justify-self:center;width:min(360px,80vw);aspect-ratio:1}
-  .portrait::before{content:"";position:absolute;inset:0;border-radius:50%;
-    background:conic-gradient(from 210deg,var(--indigo),var(--violet),var(--madder),var(--turmeric),var(--teal),var(--indigo))}
-  .portrait img{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);border-radius:50%;object-fit:cover;object-position:center 20%;border:6px solid #fff}
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 5%;height:64px;
+  background:rgba(10,14,26,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.nav-logo{
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:22px;
+  background:linear-gradient(135deg,#10b981,#7c3aed);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:13px;font-weight:500;color:var(--text2);transition:color .2s}
+.nav-links a:hover{color:var(--emerald)}
+.nav-cta{
+  background:linear-gradient(135deg,var(--emerald),var(--violet));
+  color:#fff;padding:9px 22px;border-radius:8px;
+  font-size:13px;font-weight:600;border:none;cursor:pointer;
+  transition:opacity .2s;
+}
+.nav-cta:hover{opacity:.85}
+.nav-menu-btn{display:none;background:none;border:none;color:var(--text1);font-size:22px;cursor:pointer}
 
-  /* ---------- Stats ---------- */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:1px solid var(--line)}
-  .stat{padding:26px 22px 30px;border-right:1px solid var(--line)}
-  .stat:last-child{border-right:0}
-  .stat b{display:block;font-family:var(--display);font-size:2.3rem;font-weight:800;letter-spacing:-.02em;line-height:1}
-  .stat:nth-child(1) b{color:var(--indigo)}
-  .stat:nth-child(2) b{color:var(--madder)}
-  .stat:nth-child(3) b{color:var(--teal)}
-  .stat:nth-child(4) b{color:#B97F00}
-  .stat span{display:block;margin-top:8px;color:var(--muted);font-size:.95rem}
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;
+  padding:120px 5% 80px;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 40%,rgba(124,58,237,.18) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 40% at 20% 70%,rgba(16,185,129,.13) 0%,transparent 60%);
+}
+.hero-grid{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:1fr 380px;gap:36px 60px;align-items:start;
+  max-width:1200px;margin:0 auto;width:100%;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);
+  color:var(--emerald);font-size:12px;font-weight:600;
+  padding:6px 14px;border-radius:20px;margin-bottom:20px;
+  letter-spacing:.04em;text-transform:uppercase;
+}
+.hero-badge span{width:6px;height:6px;background:var(--emerald);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-left h1{
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:48px;
+  line-height:1.15;margin-bottom:20px;color:var(--text1);
+  opacity:0;transform:translateY(24px);
+  animation:h1Enter .8s ease forwards;
+}
+@keyframes h1Enter{
+  to{opacity:1;transform:translateY(0)}
+}
+.hero-left h1 .grad{
+  background:linear-gradient(135deg,#10b981 0%,#7c3aed 30%,#f59e0b 60%,#10b981 100%);
+  background-size:200% auto;
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  animation:gradFlow 5s linear infinite;
+}
+@keyframes gradFlow{
+  0%{background-position:0% 50%}
+  100%{background-position:200% 50%}
+}
+.hero-left p{
+  font-size:16px;color:var(--text2);line-height:1.8;
+  max-width:560px;margin-bottom:36px;
+}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:0}
+.btn-g{
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--emerald),var(--violet));
+  color:#fff;padding:13px 26px;border-radius:10px;
+  font-size:14px;font-weight:600;border:none;cursor:pointer;
+  transition:transform .2s,box-shadow .2s;
+}
+.btn-g:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(16,185,129,.3)}
+.btn-o{
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;color:var(--text1);
+  padding:13px 26px;border-radius:10px;
+  font-size:14px;font-weight:500;
+  border:1px solid var(--border);cursor:pointer;
+  transition:border-color .2s,color .2s;
+}
+.btn-o:hover{border-color:var(--emerald);color:var(--emerald)}
+.hero-stats{grid-column:1/-1;display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:12px}
+.hstat{
+  background:var(--card2);border:1px solid var(--border);
+  border-radius:12px;padding:18px 10px;text-align:center;
+  transition:border-color .2s,transform .2s;
+}
+.hstat:hover{border-color:var(--emerald);transform:translateY(-3px)}
+.hstat-num{font-family:'Poppins',sans-serif;font-weight:800;font-size:26px;margin-bottom:4px}
+.hstat-num.em{color:var(--emerald)}
+.hstat-num.vi{color:var(--violet2)}
+.hstat-num.am{color:var(--amber2)}
+.hstat-num.sk{color:var(--sky2)}
+.hstat-num.co{color:var(--coral2)}
+.hstat-lbl{font-size:11px;color:var(--text2);font-weight:500}
 
-  /* ---------- Value chain (signature) ---------- */
-  .chain{background:var(--indigo-deep);color:#fff;padding:80px 0 84px}
-  .chain h2{color:#fff;max-width:20ch}
-  .chain .intro{color:#C9CEEA;max-width:62ch;margin-top:14px}
-  .flow{position:relative;display:grid;grid-template-columns:repeat(9,1fr);gap:0;margin:56px 0 0;padding:0;list-style:none}
-  .flow::before{content:"";position:absolute;left:5%;right:5%;top:27px;height:4px;border-radius:4px;
-    background:linear-gradient(90deg,var(--indigo) ,var(--violet),var(--madder),var(--turmeric),var(--teal));
-    transform-origin:left;animation:thread 1.6s .3s cubic-bezier(.6,0,.2,1) both}
-  @keyframes thread{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-  .flow li{position:relative;text-align:center;padding:0 4px}
-  .dot{width:58px;height:58px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;font-size:1.25rem;color:#fff;border:4px solid var(--indigo-deep);position:relative}
-  .flow li:nth-child(1) .dot{background:#3D4FB8}
-  .flow li:nth-child(2) .dot{background:var(--violet)}
-  .flow li:nth-child(3) .dot{background:#9446A6}
-  .flow li:nth-child(4) .dot{background:var(--madder)}
-  .flow li:nth-child(5) .dot{background:#D8642F}
-  .flow li:nth-child(6) .dot{background:var(--turmeric)}
-  .flow li:nth-child(7) .dot{background:#5E9E3A}
-  .flow li:nth-child(8) .dot{background:var(--teal)}
-  .flow li:nth-child(9) .dot{background:#1F7BB0}
-  .flow strong{display:block;font-family:var(--display);font-weight:700;font-size:1rem;line-height:1.2}
-  .flow small{display:block;color:#AEB5DA;font-size:.82rem;margin-top:4px;line-height:1.35}
-  .support{margin-top:52px;padding-top:28px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;align-items:center;gap:10px}
-  .support p{color:#C9CEEA;margin-right:8px}
-  .chip{display:inline-block;padding:7px 14px;border-radius:999px;font-size:.9rem;font-weight:500;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff}
+/* Profile card */
+.profile-card{
+  background:linear-gradient(145deg,var(--navy3),var(--navy4));
+  border:1px solid var(--border);border-radius:20px;
+  padding:36px 28px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.profile-card::before{
+  content:'';position:absolute;top:-40px;right:-40px;
+  width:150px;height:150px;
+  background:radial-gradient(circle,rgba(124,58,237,.25),transparent 70%);
+}
+.profile-avatar{
+  width:110px;height:110px;border-radius:50%;margin:0 auto 16px;
+  background:linear-gradient(135deg,var(--emerald),var(--violet));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Poppins',sans-serif;font-size:36px;font-weight:800;color:#fff;
+  position:relative;z-index:1;
+  overflow:hidden;
+  border:3px solid rgba(16,185,129,.4);
+}
+.profile-avatar img{
+  width:100%;height:100%;object-fit:cover;display:block;
+}
+.profile-card h3{font-family:'Poppins',sans-serif;font-size:18px;font-weight:700;color:var(--text1);margin-bottom:4px}
+.profile-card .ptitle{font-size:12px;color:var(--emerald);font-weight:600;margin-bottom:16px;letter-spacing:.05em}
+.profile-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:20px}
+.pill{
+  font-size:11px;font-weight:500;padding:4px 10px;border-radius:20px;
+}
+.pill.e{background:rgba(16,185,129,.15);color:var(--emerald);border:1px solid rgba(16,185,129,.3)}
+.pill.v{background:rgba(124,58,237,.15);color:var(--violet2);border:1px solid rgba(124,58,237,.3)}
+.pill.a{background:rgba(245,158,11,.15);color:var(--amber2);border:1px solid rgba(245,158,11,.3)}
+.profile-contact{display:flex;flex-direction:column;gap:8px}
+.pc-row{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--text2)}
+.pc-icon{
+  width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.pc-icon.e{background:rgba(16,185,129,.15)}
+.pc-icon.v{background:rgba(124,58,237,.15)}
+.pc-icon.s{background:rgba(14,165,233,.15)}
 
-  /* ---------- Sections ---------- */
-  section.block{padding:88px 0}
-  .block-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
-  .block-head p{color:var(--muted);max-width:52ch}
+/* ===== SECTION COMMONS ===== */
+.section{padding:80px 5%}
+.section-inner{max-width:1200px;margin:0 auto}
+.sec-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  margin-bottom:12px;
+}
+.sec-eyebrow.em{color:var(--emerald)}
+.sec-eyebrow.vi{color:var(--violet2)}
+.sec-eyebrow.am{color:var(--amber2)}
+.sec-eyebrow.sk{color:var(--sky2)}
+.sec-eyebrow.co{color:var(--coral2)}
+.sec-eyebrow::before{content:'';display:block;width:20px;height:2px;border-radius:2px}
+.sec-eyebrow.em::before{background:var(--emerald)}
+.sec-eyebrow.vi::before{background:var(--violet2)}
+.sec-eyebrow.am::before{background:var(--amber2)}
+.sec-eyebrow.sk::before{background:var(--sky2)}
+.sec-eyebrow.co::before{background:var(--coral2)}
+.sec-title{font-family:'Poppins',sans-serif;font-weight:800;font-size:34px;color:var(--text1);margin-bottom:12px;line-height:1.2}
+.sec-sub{font-size:15px;color:var(--text2);max-width:560px;line-height:1.7;margin-bottom:48px}
 
-  /* Experience timeline */
-  .timeline{position:relative;margin:0;padding:0;list-style:none}
-  .timeline::before{content:"";position:absolute;left:11px;top:10px;bottom:10px;width:3px;border-radius:3px;
-    background:linear-gradient(var(--indigo),var(--madder) 55%,var(--teal))}
-  .job{position:relative;padding-left:52px;margin-bottom:44px}
-  .job:last-child{margin-bottom:0}
-  .job::before{content:"";position:absolute;left:0;top:6px;width:25px;height:25px;border-radius:50%;background:#fff;border:6px solid var(--c,var(--indigo))}
-  .job-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 30px;border-top:5px solid var(--c,var(--indigo))}
-  .job-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline}
-  .company{font-family:var(--display);font-size:1.55rem;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
-  .where{color:var(--muted);font-size:.95rem;margin-top:2px}
-  .when{font-weight:600;font-size:.92rem;color:var(--c,var(--indigo));background:color-mix(in srgb,var(--c,var(--indigo)) 10%,white);padding:5px 12px;border-radius:999px;white-space:nowrap}
-  .role-block{margin-top:24px}
-  .role-block + .role-block{margin-top:26px;padding-top:24px;border-top:1px dashed var(--line)}
-  .role-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
-  .role-row h3{font-size:1.15rem}
-  .role-row .dates{color:var(--muted);font-size:.92rem;font-weight:500}
-  .tag{display:inline-block;font-family:var(--body);font-size:.75rem;font-weight:600;color:#fff;background:var(--teal);padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:middle}
-  .job ul{margin:12px 0 0;padding-left:20px}
-  .job li{margin:7px 0;color:#353B52}
-  .job li::marker{color:var(--c,var(--indigo))}
-  .job li b{color:var(--ink);font-weight:600}
+/* ===== ABOUT ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch}
+.about-text p{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:16px}
+.about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.ah-card{
+  background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:16px;
+  transition:border-color .2s;
+}
+.ah-card:hover{border-color:var(--emerald)}
+.ah-icon{font-size:20px;margin-bottom:8px}
+.ah-card h4{font-size:13px;font-weight:600;color:var(--text1);margin-bottom:4px}
+.ah-card p{font-size:12px;color:var(--text2)}
+.about-right{display:flex;flex-direction:column;gap:16px;height:100%}
+.edu-card{
+  background:var(--card2);border:1px solid var(--border);border-radius:14px;padding:20px;
+  border-left:3px solid var(--violet);
+  flex:1;display:flex;flex-direction:column;justify-content:center;
+}
+.edu-card h4{font-size:14px;font-weight:600;color:var(--text1);margin-bottom:4px}
+.edu-card p{font-size:12px;color:var(--text2)}
+.edu-card .grade{display:inline-block;align-self:flex-start;margin-top:6px;font-size:11px;font-weight:600;color:var(--violet2);background:rgba(124,58,237,.12);padding:3px 9px;border-radius:20px}
 
-  /* Achievements */
-  .achieve{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .ach-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
-  .ach{padding:28px 28px 30px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:52px 1fr;gap:16px}
-  .ach:nth-child(odd){padding-right:40px;border-right:1px solid var(--line)}
-  .ach:nth-child(even){padding-left:40px}
-  .ach .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;color:#fff;font-size:1.1rem}
-  .ach h3{font-size:1.1rem;margin-bottom:6px}
-  .ach p{color:var(--muted);font-size:.98rem}
-  .ach.wide{grid-column:1 / -1;border-right:0;padding-right:0}
+/* ===== TIMELINE ===== */
+.bg-alt{background:var(--navy2)}
+.timeline{position:relative;padding-left:0}
+.tl-wrap{display:grid;grid-template-columns:1fr 3px 1fr;gap:0;position:relative}
+.tl-line{background:linear-gradient(180deg,var(--emerald),var(--violet),var(--amber));border-radius:3px;position:relative}
+.tl-left,.tl-right{display:flex;flex-direction:column;gap:48px;padding:0 32px}
+.tl-left{align-items:flex-end;text-align:right}
+.tl-right{align-items:flex-start;text-align:left}
+.tl-item{position:relative;max-width:440px}
+.tl-item{
+  opacity:0;transition:opacity .7s ease,transform .7s ease;
+}
+.tl-left .tl-item{transform:translateX(-50px)}
+.tl-right .tl-item{transform:translateX(50px)}
+.tl-item.visible{opacity:1;transform:translateX(0)}
+.tl-dot{
+  position:absolute;top:16px;
+  width:14px;height:14px;border-radius:50%;
+  border:2px solid var(--navy2);
+}
+.tl-left .tl-dot{right:-39px;background:var(--emerald)}
+.tl-right .tl-dot{left:-39px}
+.tl-right .tl-item:nth-child(2) .tl-dot{background:var(--violet)}
+.tl-right .tl-item:nth-child(3) .tl-dot{background:var(--amber)}
+.tl-period{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.tl-left .tl-period{color:var(--emerald)}
+.tl-right .tl-item:nth-child(1) .tl-period{color:var(--violet2)}
+.tl-right .tl-item:nth-child(2) .tl-period{color:var(--amber2)}
+.tl-right .tl-item:nth-child(3) .tl-period{color:var(--sky2)}
+.tl-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:14px;padding:20px;transition:border-color .2s,transform .2s;
+}
+.tl-card:hover{transform:translateY(-2px)}
+.tl-left .tl-card:hover{border-color:var(--emerald)}
+.tl-right .tl-item:nth-child(1) .tl-card:hover{border-color:var(--violet)}
+.tl-right .tl-item:nth-child(2) .tl-card:hover{border-color:var(--amber)}
+.tl-right .tl-item:nth-child(3) .tl-card:hover{border-color:var(--sky)}
+.tl-role{font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;color:var(--text1);margin-bottom:3px}
+.tl-company{font-size:12px;color:var(--text2);margin-bottom:10px}
+.tl-tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:inherit}
+.tl-tag{font-size:10px;font-weight:500;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.06);color:var(--text2);border:1px solid rgba(255,255,255,.08)}
+.tl-kpi{font-size:11px;font-weight:600;margin-top:10px}
+.tl-kpi.em{color:var(--emerald)}
+.tl-kpi.vi{color:var(--violet2)}
+.tl-kpi.am{color:var(--amber2)}
+.tl-kpi.sk{color:var(--sky2)}
 
-  /* Skills */
-  .skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-  .skill{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 28px;border-left:6px solid var(--c)}
-  .skill h3{font-size:1.12rem;margin-bottom:14px}
-  .skill .tags{display:flex;flex-wrap:wrap;gap:8px}
-  .skill .tags span{font-size:.88rem;padding:5px 12px;border-radius:999px;background:color-mix(in srgb,var(--c) 9%,white);color:color-mix(in srgb,var(--c) 75%,black);font-weight:500}
+/* ===== PROJECTS ===== */
+.projects-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px}
+.filt-btn{
+  background:var(--card2);border:1px solid var(--border);
+  color:var(--text2);font-size:12px;font-weight:500;
+  padding:7px 16px;border-radius:20px;cursor:pointer;
+  transition:all .2s;
+}
+.filt-btn.active,.filt-btn:hover{background:var(--emerald);border-color:var(--emerald);color:#fff}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.proj-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:24px;
+  transition:border-color .2s,transform .2s;
+  cursor:pointer;
+}
+.proj-card:hover{transform:translateY(-4px)}
+.proj-card.c-em{border-top:3px solid var(--emerald)}
+.proj-card.c-vi{border-top:3px solid var(--violet)}
+.proj-card.c-am{border-top:3px solid var(--amber)}
+.proj-card.c-sk{border-top:3px solid var(--sky)}
+.proj-card.c-co{border-top:3px solid var(--coral)}
+.proj-icon-wrap{
+  width:48px;height:48px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;margin-bottom:14px;
+}
+.pi-em{background:rgba(16,185,129,.15)}
+.pi-vi{background:rgba(124,58,237,.15)}
+.pi-am{background:rgba(245,158,11,.15)}
+.pi-sk{background:rgba(14,165,233,.15)}
+.pi-co{background:rgba(244,63,94,.15)}
+.proj-card h3{font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;color:var(--text1);margin-bottom:8px;line-height:1.3}
+.proj-card p{font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:14px}
+.proj-kpi-row{display:flex;gap:8px;flex-wrap:wrap}
+.pkpi{font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px}
+.pkpi.em{background:rgba(16,185,129,.12);color:var(--emerald)}
+.pkpi.vi{background:rgba(124,58,237,.12);color:var(--violet2)}
+.pkpi.am{background:rgba(245,158,11,.12);color:var(--amber2)}
+.pkpi.sk{background:rgba(14,165,233,.12);color:var(--sky2)}
+.pkpi.co{background:rgba(244,63,94,.12);color:var(--coral2)}
 
-  /* Credentials */
-  .cred-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:56px}
-  .cred-list{list-style:none;margin:24px 0 0;padding:0}
-  .cred-list li{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:16px 0;border-bottom:1px solid var(--line)}
-  .cred-list li:first-child{border-top:1px solid var(--line)}
-  .cred-list strong{font-weight:600}
-  .cred-list .yr{font-family:var(--display);font-weight:700;color:var(--indigo)}
-  .cred-list small{grid-column:1 / -1;color:var(--muted);font-size:.9rem}
+/* ===== SKILLS ===== */
+.skills-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.skill-group h3{font-size:13px;font-weight:600;color:var(--text2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:20px}
+.skill-item{margin-bottom:16px}
+.skill-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}
+.skill-name{font-size:14px;font-weight:500;color:var(--text1);display:flex;align-items:center;gap:8px}
+.skill-pct{font-size:12px;font-weight:600}
+.skill-track{height:6px;background:rgba(255,255,255,.07);border-radius:3px;overflow:hidden}
+.skill-fill{height:100%;border-radius:3px;width:0;transition:width 1.2s cubic-bezier(.16,1,.3,1)}
+.sf-em{background:linear-gradient(90deg,var(--emerald2),var(--emerald))}
+.sf-vi{background:linear-gradient(90deg,var(--violet),var(--violet2))}
+.sf-am{background:linear-gradient(90deg,#d97706,var(--amber2))}
+.sf-sk{background:linear-gradient(90deg,#0369a1,var(--sky2))}
 
-  /* Contact */
-  .contact{background:linear-gradient(135deg,var(--indigo-deep) 0%,var(--indigo) 55%,#3A2F86 100%);color:#fff;padding:80px 0}
-  .contact h2{color:#fff;max-width:18ch}
-  .contact p.sub{color:#C9CEEA;margin-top:12px;max-width:52ch}
-  .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
-  .c-item{display:flex;gap:14px;align-items:center;padding:20px 22px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#fff;text-decoration:none}
-  a.c-item:hover{background:rgba(255,255,255,.14)}
-  .c-item i{font-size:1.2rem;color:var(--turmeric)}
-  .c-item span{display:block;font-size:.85rem;color:#C9CEEA}
-  .c-item b{font-weight:600;word-break:break-word}
-  .socials{display:flex;gap:10px;margin-top:28px}
-  .socials a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--indigo-deep);text-decoration:none}
-  .socials a:hover{background:var(--turmeric)}
-  footer{background:var(--indigo-deep);color:#AEB5DA;font-size:.88rem;padding:20px 0;text-align:center}
+/* Tools grid */
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:48px}
+.tool-chip{
+  background:var(--card2);border:1px solid var(--border);
+  border-radius:12px;padding:14px;text-align:center;
+  transition:border-color .2s,transform .2s;
+}
+.tool-chip:hover{transform:translateY(-2px)}
+.tool-chip.te{border-bottom:2px solid var(--emerald)}
+.tool-chip.tv{border-bottom:2px solid var(--violet2)}
+.tool-chip.ta{border-bottom:2px solid var(--amber2)}
+.tool-chip.ts{border-bottom:2px solid var(--sky2)}
+.tool-emoji{font-size:22px;margin-bottom:6px}
+.tool-name{font-size:12px;font-weight:600;color:var(--text1)}
 
-  /* ---------- Contact + form ---------- */
-  .nav a.nav-cta{background:var(--indigo);color:#fff;margin-left:6px}
-  .nav a.nav-cta:hover{background:var(--indigo-deep);color:#fff}
-  .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-  .c-list{display:grid;gap:12px;margin-top:32px}
-  .c-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:26px}
-  .c-actions .socials{margin-top:0}
-  .btn-gold{background:var(--turmeric);color:var(--indigo-deep)}
-  .btn-gold:hover{background:#F0B53A}
-  .mail-form{background:#fff;color:var(--ink);border-radius:18px;padding:30px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
-  .mail-form h3{font-size:1.35rem;margin-bottom:18px}
-  .mail-form label{display:block;font-weight:600;font-size:.9rem;margin:0 0 6px}
-  .mail-form input,.mail-form textarea{width:100%;font:inherit;font-size:1rem;padding:11px 14px;border:1px solid #CBD0DE;border-radius:10px;margin-bottom:16px;background:#fff;color:var(--ink)}
-  .mail-form input:focus,.mail-form textarea:focus{outline:none;border-color:var(--indigo);box-shadow:0 0 0 3px rgba(34,48,122,.15)}
-  .mail-form textarea{min-height:120px;resize:vertical}
-  .mail-form .btn{width:100%;justify-content:center}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .form-note{color:var(--muted);font-size:.85rem;margin-top:10px;text-align:center}
+/* ===== CERTIFICATIONS ===== */
+.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cert-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:24px;
+  transition:transform .2s,border-color .2s;position:relative;overflow:hidden;
+}
+.cert-card::after{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+}
+.cert-card.cc1::after{background:linear-gradient(90deg,var(--emerald),var(--violet))}
+.cert-card.cc2::after{background:linear-gradient(90deg,var(--violet),var(--amber))}
+.cert-card.cc3::after{background:linear-gradient(90deg,var(--amber),var(--sky))}
+.cert-card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.15)}
+.cert-badge-wrap{
+  width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+  font-size:24px;margin-bottom:16px;
+}
+.cb1{background:linear-gradient(135deg,rgba(16,185,129,.2),rgba(124,58,237,.2))}
+.cb2{background:linear-gradient(135deg,rgba(124,58,237,.2),rgba(245,158,11,.2))}
+.cb3{background:linear-gradient(135deg,rgba(245,158,11,.2),rgba(14,165,233,.2))}
+.cert-card h3{font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;color:var(--text1);margin-bottom:6px;line-height:1.3}
+.cert-card p{font-size:12px;color:var(--text2);margin-bottom:12px}
+.cert-org{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px}
+.co1{background:rgba(16,185,129,.12);color:var(--emerald)}
+.co2{background:rgba(124,58,237,.12);color:var(--violet2)}
+.co3{background:rgba(245,158,11,.12);color:var(--amber2)}
 
-  /* ---------- Responsive ---------- */
-  @media (max-width:980px){
-    .hero-grid{grid-template-columns:1fr;gap:36px}
-    .portrait{order:-1;width:220px}
-    .stats{grid-template-columns:repeat(2,1fr)}
-    .stat:nth-child(2){border-right:0}
-    .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
-    .flow{grid-template-columns:repeat(3,1fr);row-gap:30px}
-    .flow::before{display:none}
-    .ach-grid,.skill-grid,.cred-grid,.contact-grid,.contact-wrap{grid-template-columns:1fr}
-    .ach:nth-child(odd),.ach:nth-child(even){padding:24px 0;border-right:0}
-  }
-  @media (max-width:760px){
-    .nav{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;padding:10px 16px;border-bottom:1px solid var(--line)}
-    .nav.open{display:flex}
-    .menu-btn{display:block}
-    .hero{padding-top:44px}
-    .job{padding-left:40px}
-    .job-card{padding:22px 20px}
-    .timeline::before{left:9px}
-    .job::before{width:21px;height:21px;border-width:5px}
-    .flow{grid-template-columns:repeat(2,1fr)}
-    section.block{padding:64px 0}
-    .two{grid-template-columns:1fr}
-    .mail-form{padding:22px}
-  }
-  @media (prefers-reduced-motion:reduce){
-    html{scroll-behavior:auto}
-    .flow::before{animation:none}
-  }
-  @media print{
-    .topbar,.actions,.socials,.mail-form,.c-actions{display:none}
-    .chain,.contact{background:#fff;color:var(--ink)}
-  }
+/* ===== PUBLICATIONS ===== */
+.pubs-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pub-card{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:16px;padding:28px;
+  transition:border-color .2s,transform .2s;
+}
+.pub-card:hover{transform:translateY(-3px);border-color:var(--emerald)}
+.pub-num{
+  font-family:'Poppins',sans-serif;font-size:48px;font-weight:800;
+  background:linear-gradient(135deg,var(--emerald),var(--violet));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:12px;line-height:1;
+}
+.pub-card h3{font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:var(--text1);margin-bottom:12px;line-height:1.4}
+.pub-card p{font-size:13px;color:var(--text2);line-height:1.7;margin-bottom:16px}
+.pub-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.pub-tag{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;background:rgba(16,185,129,.1);color:var(--emerald)}
+.pub-link{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:13px;font-weight:600;color:var(--emerald);
+  transition:gap .2s;
+}
+.pub-link:hover{gap:10px}
+.pub-link::after{content:'→'}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:start}
+.contact-cards{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
+.cc-card{
+  display:flex;align-items:center;gap:16px;
+  background:var(--card2);border:1px solid var(--border);
+  border-radius:14px;padding:18px;transition:border-color .2s;
+}
+.cc-card:hover{border-color:var(--emerald)}
+.cc-icon{
+  width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;
+}
+.ci1{background:rgba(16,185,129,.15)}
+.ci2{background:rgba(14,165,233,.15)}
+.ci3{background:rgba(124,58,237,.15)}
+.ci4{background:rgba(245,158,11,.15)}
+.cc-label{font-size:11px;color:var(--text2);margin-bottom:2px}
+.cc-val{font-size:13px;font-weight:600;color:var(--text1)}
+.social-row{display:flex;gap:12px;flex-wrap:wrap}
+.soc-btn{
+  display:flex;align-items:center;gap:8px;
+  background:var(--card2);border:1px solid var(--border);
+  border-radius:10px;padding:10px 16px;font-size:12px;font-weight:600;color:var(--text2);
+  transition:all .2s;cursor:pointer;
+}
+.soc-btn:hover{border-color:var(--emerald);color:var(--emerald);transform:translateY(-2px)}
+.contact-form-wrap{
+  background:var(--card2);border:1px solid var(--border);
+  border-radius:20px;padding:32px;
+}
+.contact-form-wrap h3{font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;color:var(--text1);margin-bottom:24px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:var(--text2);margin-bottom:7px;letter-spacing:.03em}
+.form-group input,.form-group textarea,.form-group select{
+  width:100%;background:var(--card);border:1px solid var(--border);
+  border-radius:10px;padding:12px 16px;color:var(--text1);font-size:14px;
+  font-family:'Inter',sans-serif;outline:none;transition:border-color .2s;
+}
+.form-group input:focus,.form-group textarea:focus{border-color:var(--emerald)}
+.form-group textarea{height:110px;resize:none}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--text3)}
+.submit-btn{
+  width:100%;padding:14px;
+  background:linear-gradient(135deg,var(--emerald),var(--violet));
+  color:#fff;border:none;border-radius:10px;
+  font-size:15px;font-weight:700;cursor:pointer;
+  font-family:'Poppins',sans-serif;transition:opacity .2s,transform .2s;
+}
+.submit-btn:hover{opacity:.88;transform:translateY(-1px)}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--navy2);border-top:1px solid var(--border);
+  padding:40px 5%;
+}
+.footer-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;
+}
+.footer-logo{
+  font-family:'Poppins',sans-serif;font-weight:800;font-size:20px;
+  background:linear-gradient(135deg,#10b981,#7c3aed);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.footer-copy{font-size:12px;color:var(--text3);text-align:center}
+.footer-links{display:flex;gap:24px}
+.footer-links a{font-size:12px;color:var(--text2);transition:color .2s}
+.footer-links a:hover{color:var(--emerald)}
+
+/* ===== DIVIDER ===== */
+.div-line{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:0 5%}
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu{
+  display:none;flex-direction:column;gap:4px;
+  position:fixed;top:64px;left:0;right:0;z-index:999;
+  background:rgba(10,14,26,.97);backdrop-filter:blur(12px);
+  padding:20px 5%;border-bottom:1px solid var(--border);
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:15px;color:var(--text2);padding:10px 0;border-bottom:1px solid var(--border);font-weight:500}
+.mobile-menu a:last-child{border:none}
+
+/* ===== SCROLL ANIMATIONS ===== */
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .profile-card{max-width:420px;margin:0 auto;width:100%}
+  .hero-left h1{font-size:34px}
+  .hero-stats{grid-template-columns:repeat(3,1fr)}
+  .about-grid,.skills-wrap,.pubs-grid,.contact-grid{grid-template-columns:1fr}
+  .projects-grid,.certs-grid{grid-template-columns:repeat(2,1fr)}
+  .tl-wrap{display:flex;flex-direction:column;gap:40px}
+  .tl-line{display:none}
+  .tl-left,.tl-right{display:contents}
+  .tl-item{max-width:none;width:100%;text-align:left}
+  .tl-left .tl-item{transform:translateX(-30px)}
+  .tl-right .tl-item{transform:translateX(30px)}
+  .tl-item.visible{transform:translateX(0)}
+  .tl-tags{justify-content:flex-start}
+  .tl-left .tl-item:nth-child(1){order:1}
+  .tl-right .tl-item:nth-child(1){order:2}
+  .tl-left .tl-item:nth-child(2){order:3}
+  .tl-right .tl-item:nth-child(2){order:4}
+  .tl-left .tl-item:nth-child(3){order:5}
+  .tl-right .tl-item:nth-child(3){order:6}
+  .tl-left .tl-period{color:var(--emerald)}
+  .tl-left .tl-dot,.tl-right .tl-dot{display:none}
+  .tools-grid{grid-template-columns:repeat(3,1fr)}
+  .nav-links{display:none}
+  .nav-menu-btn{display:block}
+  .form-row{grid-template-columns:1fr}
+  .nav-cta{padding:8px 14px;font-size:12px;margin-left:auto;margin-right:14px}
+}
+@media(max-width:540px){
+  .nav-cta{padding:7px 12px;font-size:11px;margin-right:10px}
+  .nav-logo{font-size:20px}
+  .projects-grid,.certs-grid,.tools-grid{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .section{padding:56px 5%}
+}
 </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Alam Hossain</a>
-    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i class="fas fa-bars"></i></button>
-    <nav class="nav" id="nav">
-      <a href="#modules">ERP modules</a>
-      <a href="#experience">Experience</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#skills">Skills</a>
-      <a href="#credentials">Education</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="Alam_Hossain_CV.pdf" download><i class="fas fa-download"></i> CV</a>
-    </nav>
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">AH<span style="background:none;-webkit-text-fill-color:var(--emerald)">.</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
   </div>
-</header>
+  <a href="https://www.linkedin.com/in/alam-hossain-talukdar/" target="_blank" rel="noopener" class="nav-cta">Connect on LinkedIn</a>
+  <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+  <a href="https://www.linkedin.com/in/alam-hossain-talukdar/" target="_blank" rel="noopener" style="color:var(--emerald)">💼 Connect on LinkedIn</a>
+</div>
 
-<main id="top">
-  <!-- Hero -->
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <h1>Md. Alam Hossain</h1>
-          <p class="role"><span>Business Analyst</span><span>ERP Implementation</span><span>Power BI &amp; MIS</span></p>
-          <p class="lead">I turn complex textile and apparel workflows into ERP systems people actually use. 10+ years of requirements analysis, process mapping, configuration, testing and user training, including 6+ years at Epyllion Group.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="Alam_Hossain_CV.pdf" download><i class="fas fa-file-arrow-down"></i>Download CV</a>
-            <a class="btn btn-ghost" href="#contact"><i class="fas fa-envelope"></i>Email me</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/alam-hossain-talukdar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i>LinkedIn</a>
-          </div>
-          <div class="contact-line">
-            <a href="mailto:alamhossain.talukdar@gmail.com"><i class="fas fa-envelope"></i>alamhossain.talukdar@gmail.com</a>
-            <a href="tel:+8801731844402"><i class="fas fa-phone"></i>+88 01731844402</a>
-            <span><i class="fas fa-location-dot"></i>Tongi, Gazipur, Dhaka</span>
-          </div>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-badge"><span></span>Open to Senior &amp; Leadership Opportunities</div>
+      <h1>Transforming Manufacturing Through <span class="grad">ERP, Data &amp; Operational Excellence</span></h1>
+      <p>ERP Implementation &amp; Business Analysis professional with 10+ years of experience driving digital transformation, business process automation, and manufacturing excellence across Bangladesh's RMG and Textile industries. Experienced in managing ERP initiatives, optimizing business workflows, and aligning technology solutions with operational goals.</p>
+      <div class="hero-btns">
+        <a class="btn-g" href="Alam_Hossain_CV.pdf" target="_blank" rel="noopener">📄 Download CV</a>
+        <a href="#projects" class="btn-o">🗂 View Projects</a>
+        <a href="#contact" class="btn-o">✉ Contact Me</a>
+      </div>
+    </div>
+    <div class="profile-card">
+      <div class="profile-avatar"><img src="assets/img/profile.jpg" alt="Md. Alam Hossain"/></div>
+      <h3>Md. Alam Hossain</h3>
+      <div class="ptitle">BUSINESS ANALYST · ERP IMPLEMENTATION</div>
+      <div class="profile-pills">
+        <span class="pill e">Business Analyst</span>
+        <span class="pill v">ERP Implementation</span>
+        <span class="pill a">Power BI &amp; MIS</span>
+        <span class="pill e">UAT &amp; SQA</span>
+        <span class="pill v">Automation</span>
+        <span class="pill a">CBAP</span>
+        <span class="pill e">CCNA</span>
+      </div>
+      <div class="profile-contact">
+        <a href="mailto:alamhossain.talukdar@gmail.com" style="color:inherit"><div class="pc-row"><div class="pc-icon e">📧</div>alamhossain.talukdar@gmail.com</div></a>
+        <a href="tel:+8801731844402" style="color:inherit"><div class="pc-row"><div class="pc-icon v">📱</div>+880 1731-844402</div></a>
+        <div class="pc-row"><div class="pc-icon s">📍</div>Tongi, Gazipur, Dhaka, Bangladesh</div>
+        <a href="https://www.epylliongroup.com/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><div class="pc-row"><div class="pc-icon e">🏢</div>Epyllion Group</div></a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-num em" id="s1">0</div><div class="hstat-lbl">Years Experience</div></div>
+      <div class="hstat"><div class="hstat-num vi" id="s2">0</div><div class="hstat-lbl">ERP Modules Implemented</div></div>
+      <div class="hstat"><div class="hstat-num am" id="s3">0</div><div class="hstat-lbl">ERP Users Trained</div></div>
+      <div class="hstat"><div class="hstat-num sk" id="s4">0</div><div class="hstat-lbl">Manual Effort Reduced</div></div>
+      <div class="hstat"><div class="hstat-num co" id="s5">0</div><div class="hstat-lbl">Departments Digitized</div></div>
+      <div class="hstat"><div class="hstat-num em" id="s6">0</div><div class="hstat-lbl">Power BI Dashboards</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="div-line"></div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner fade-in">
+    <div class="sec-eyebrow em">Who I Am</div>
+    <h2 class="sec-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I am a Business Analyst and ERP Implementation professional with 10+ years of experience in the textile and apparel manufacturing industry — including 6+ years at Epyllion Group, one of Bangladesh's leading garments &amp; textile groups.</p>
+        <p>My work bridges business analysis, manufacturing operations, and software implementation. I have implemented and supported ERP systems for Merchandising &amp; Order Management, Textile (Knitting, Dyeing &amp; Finishing), Supply Chain &amp; Inventory, Production &amp; Quality, R&amp;D &amp; Lab Management, and HRMS &amp; Payroll — each driving measurable improvements in process efficiency, data accuracy, and management decision-making.</p>
+        <p>From requirements analysis and AS-IS/TO-BE process mapping to BRD/FRS documentation, UAT, go-live and post-go-live support, I have delivered 15+ ERP modules, reduced manual testing &amp; data entry by 40% through Selenium, Katalon and AI automation, built 8+ Power BI dashboards, and trained 600+ ERP users across 13+ departments.</p>
+        <div class="about-highlights">
+          <div class="ah-card"><div class="ah-icon">🔧</div><h4>ERP Implementation</h4><p>End-to-end system design, configuration &amp; rollout</p></div>
+          <div class="ah-card"><div class="ah-icon">📊</div><h4>Data Analytics</h4><p>KPI dashboards, Power BI &amp; data-driven decisions</p></div>
+          <div class="ah-card"><div class="ah-icon">📋</div><h4>Business Analysis</h4><p>Requirements, BRD/FRS, AS-IS/TO-BE &amp; gap analysis</p></div>
+          <div class="ah-card"><div class="ah-icon">🤖</div><h4>Testing &amp; Automation</h4><p>Functional / regression testing, Selenium, Katalon, Jira</p></div>
         </div>
-        <div class="portrait"><img src="assets/img/profile.jpg" alt="Portrait of Md. Alam Hossain" /></div>
       </div>
-
-      <div class="stats">
-        <div class="stat"><b>10+</b><span>years in textile &amp; apparel ERP</span></div>
-        <div class="stat"><b>15+</b><span>ERP modules implemented</span></div>
-        <div class="stat"><b>600+</b><span>end-users trained</span></div>
-        <div class="stat"><b>40%</b><span>less manual testing &amp; data entry</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Value chain -->
-  <section class="chain" id="modules">
-    <div class="wrap">
-      <h2>From order to shipment, from yarn to finished fabric</h2>
-      <p class="intro">I have implemented ERP across the full textile and apparel value chain, so every handover between departments is mapped, configured and tested.</p>
-      <ol class="flow">
-        <li><div class="dot"><i class="fas fa-file-signature"></i></div><strong>Order management</strong><small>Buyer orders &amp; costing</small></li>
-        <li><div class="dot"><i class="fas fa-shirt"></i></div><strong>Merchandising</strong><small>Styles, BOM, approvals</small></li>
-        <li><div class="dot"><i class="fas fa-calendar-check"></i></div><strong>Planning</strong><small>Capacity &amp; schedules</small></li>
-        <li><div class="dot"><i class="fas fa-boxes-stacked"></i></div><strong>Supply chain &amp; inventory</strong><small>Purchase to store</small></li>
-        <li><div class="dot"><i class="fas fa-circle-nodes"></i></div><strong>Knitting</strong><small>Yarn to grey fabric</small></li>
-        <li><div class="dot"><i class="fas fa-fill-drip"></i></div><strong>Dyeing</strong><small>Batch &amp; recipe</small></li>
-        <li><div class="dot"><i class="fas fa-wand-magic-sparkles"></i></div><strong>Finishing &amp; washing</strong><small>Finished fabric</small></li>
-        <li><div class="dot"><i class="fas fa-clipboard-check"></i></div><strong>Production &amp; quality</strong><small>Floor output &amp; QC</small></li>
-        <li><div class="dot"><i class="fas fa-ship"></i></div><strong>Commercial</strong><small>Export &amp; shipment</small></li>
-      </ol>
-      <div class="support">
-        <p>Also implemented:</p>
-        <span class="chip">R&amp;D</span>
-        <span class="chip">Formulation &amp; testing lab</span>
-        <span class="chip">Asset management</span>
-        <span class="chip">Finance</span>
-        <span class="chip">Payroll</span>
-        <span class="chip">HRMS</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="block" id="experience">
-    <div class="wrap">
-      <div class="block-head">
-        <h2>Experience</h2>
-        <p>Four roles across three companies, all in ERP for textile, sweater and garment manufacturing.</p>
-      </div>
-      <ol class="timeline">
-        <li class="job" style="--c:var(--indigo)">
-          <div class="job-card">
-            <div class="job-top">
-              <div><div class="company">Epyllion Group</div><div class="where">Ninakabbo, Gulshan Link Road, Dhaka</div></div>
-              <span class="when">Dec 2019 – Present</span>
-            </div>
-            <div class="role-block">
-              <div class="role-row"><h3>Senior Executive &amp; Business Analyst <span class="tag">Promoted</span></h3><span class="dates">Jul 2022 – Present</span></div>
-              <ul>
-                <li><b>ERP implementation &amp; management:</b> Lead and coordinate end-to-end ERP implementation with ERP users, department heads, senior management and technical teams: gathering and analyzing requirements, resolving functional issues, monitoring progress and ensuring deployment aligned with business objectives.</li>
-                <li><b>Process analysis &amp; documentation:</b> Conduct cross-functional AS-IS/TO-BE workflow mapping and gap analysis; prepare BRDs, FRS documents, process maps, user stories and acceptance criteria.</li>
-                <li><b>System design &amp; prototyping:</b> Design Data Flow Diagrams and interactive ERP interface mockups, secure stakeholder approval, and hand approved designs to developers for accurate build.</li>
-                <li><b>Feature validation &amp; automation:</b> Validate ERP features, business logic and data flows through structured test scenarios and UAT; automate testing and data entry with Selenium and Katalon, cutting execution time by 40%.</li>
-                <li><b>Defect management, training &amp; support:</b> Manage the defect lifecycle in Jira, from root-cause analysis to retesting and resolution; run hands-on training and post-go-live support, deliver user manuals, and trained 600+ end-users across manufacturing units.</li>
-                <li><b>Business intelligence &amp; MIS:</b> Build and maintain Power BI dashboards and advanced Excel/MIS reports for Production, Sales and Inventory.</li>
-              </ul>
-            </div>
-            <div class="role-block">
-              <div class="role-row"><h3>Executive – ERP Implementation</h3><span class="dates">Dec 2019 – Jun 2022</span></div>
-              <ul>
-                <li><b>ERP implementation:</b> Executed end-to-end ERP module implementation, including planning, system setup and testing, and delivered hands-on functional training and SOP guidance to floor-level operations.</li>
-                <li><b>Process mapping:</b> Created process maps and workflow diagrams in MS Visio to document how each department works and to set standard ERP procedures.</li>
-                <li><b>Transaction checking:</b> Regularly checked ERP transactions to find wrong entries, missing information and process mistakes, and made sure they were corrected on time.</li>
-                <li><b>Functional support &amp; troubleshooting:</b> Resolved user-reported issues with the technical team and guided ERP users on the correct way to use the system in their daily work.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li class="job" style="--c:var(--madder)">
-          <div class="job-card">
-            <div class="job-top">
-              <div><div class="company">Unifill Group</div><div class="where">Hemayetpur, Savar, Dhaka</div></div>
-              <span class="when">Jun 2017 – Dec 2019</span>
-            </div>
-            <div class="role-block">
-              <div class="role-row"><h3>Executive – ERP Implementation &amp; IT</h3></div>
-              <ul>
-                <li><b>Multi-module ERP rollout:</b> Delivered ERP implementation and functional support across sweater manufacturing units, configuring 9 modules: Merchandising, Inventory, Planning, Commercial, Production, Finance, HRMS, Knitting and Dyeing.</li>
-                <li><b>MIS reporting &amp; analytics:</b> Generated customized MIS and data-analysis reports for production scheduling, shopfloor tracking and inventory control.</li>
-                <li><b>Training &amp; post-go-live support:</b> Prepared structured ERP user manuals, ran end-user training sessions, and provided functional and IT support after implementation.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-
-        <li class="job" style="--c:var(--teal)">
-          <div class="job-card">
-            <div class="job-top">
-              <div><div class="company">Spectrum Lanka Management Solution Ltd.</div><div class="where">Niketan, Dhaka</div></div>
-              <span class="when">May 2015 – May 2017</span>
-            </div>
-            <div class="role-block">
-              <div class="role-row"><h3>Software Support Engineer</h3></div>
-              <ul>
-                <li><b>Client ERP implementations:</b> Implemented end-to-end ERP solutions for 3+ companies in the garments, sweater and textile industries.</li>
-                <li><b>Configuration &amp; access control:</b> Configured ERP modules, business workflows, user access, roles and permissions to fit each client's operations.</li>
-                <li><b>Troubleshooting &amp; developer coordination:</b> Provided end-user training and functional support, diagnosed software defects, and worked with development teams to resolve them.</li>
-              </ul>
-            </div>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- Achievements -->
-  <section class="block achieve" id="achievements">
-    <div class="wrap">
-      <div class="block-head"><h2>Key achievements</h2></div>
-      <div class="ach-grid">
-        <div class="ach"><div class="ic" style="background:var(--indigo)"><i class="fas fa-diagram-project"></i></div><div><h3>End-to-end ERP delivery</h3><p>Implemented and optimized 15+ ERP modules across garments, textile and sweater manufacturing, from order management to shipment and knitting to finished fabric.</p></div></div>
-        <div class="ach"><div class="ic" style="background:var(--teal)"><i class="fas fa-robot"></i></div><div><h3>40% less manual effort</h3><p>Built automated test suites and data-entry scripts with Selenium WebDriver (Python), Katalon Studio and AI tools, cutting regression testing and data entry by 40%.</p></div></div>
-        <div class="ach"><div class="ic" style="background:var(--turmeric)"><i class="fas fa-chart-column"></i></div><div><h3>Management BI &amp; MIS</h3><p>Built 8+ interactive Power BI dashboards and Excel MIS suites for Production, Sales and Inventory, giving management clearer daily visibility.</p></div></div>
-        <div class="ach"><div class="ic" style="background:var(--madder)"><i class="fas fa-users"></i></div><div><h3>600+ users onboarded</h3><p>Designed user manuals, SOPs and structured training programs that enabled 600+ end-users across manufacturing units after go-live.</p></div></div>
-        <div class="ach wide"><div class="ic" style="background:var(--violet)"><i class="fas fa-file-lines"></i></div><div><h3>Requirements to delivery</h3><p>Bridged users and technical teams by translating business needs into BRDs, FRS documents, DFDs and user stories, streamlining AS-IS/TO-BE workflows and removing operational bottlenecks.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="block" id="skills">
-    <div class="wrap">
-      <div class="block-head"><h2>Skills &amp; tools</h2></div>
-      <div class="skill-grid">
-        <div class="skill" style="--c:var(--indigo)"><h3>Business analysis &amp; process design</h3><div class="tags"><span>Requirements gathering</span><span>Stakeholder management</span><span>AS-IS / TO-BE analysis</span><span>Gap analysis</span><span>BRD / FRS</span><span>SOPs</span><span>MS Visio process maps</span><span>Data Flow Diagrams</span><span>ERP interface mockups</span></div></div>
-        <div class="skill" style="--c:var(--madder)"><h3>ERP implementation &amp; operations</h3><div class="tags"><span>Full-cycle implementation</span><span>Module configuration</span><span>Master data preparation</span><span>Transaction auditing</span><span>Root cause analysis</span><span>Role-based access control</span><span>Go-live &amp; user support</span><span>Process improvement</span></div></div>
-        <div class="skill" style="--c:var(--teal)"><h3>Software testing &amp; automation</h3><div class="tags"><span>Functional testing</span><span>Regression testing</span><span>Integration testing</span><span>UAT</span><span>Test case design</span><span>Selenium WebDriver (Python)</span><span>Katalon Studio</span><span>Jira sprint &amp; defects</span></div></div>
-        <div class="skill" style="--c:#B97F00"><h3>Reporting, analytics &amp; AI</h3><div class="tags"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Advanced Excel</span><span>MIS reporting</span><span>Pivot tables</span><span>SQL</span><span>Generative AI &amp; prompt engineering</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications & Education -->
-  <section class="block achieve" id="credentials">
-    <div class="wrap">
-      <div class="cred-grid">
-        <div>
-          <h2>Certifications &amp; training</h2>
-          <ul class="cred-list">
-            <li><strong>AI for Professional Excellence (15 days) – Epyllion Group</strong><span class="yr">2026</span><small>Prompt engineering, AI for professional growth</small></li>
-            <li><strong>Data Analytics with Excel &amp; Power BI (3 months) – Ostad</strong><span class="yr">2025</span><small>Power BI, DAX, SQL, data analytics with AI</small></li>
-            <li><strong>SQA &amp; Test Management (3 months) – Ostad</strong><span class="yr">2025</span><small>Functional and regression testing, defect management</small></li>
-            <li><strong>CBAP Training (3 months) – IIBA Bangladesh Chapter</strong><span class="yr">2025</span><small>Requirements management, strategy and solution analysis</small></li>
-            <li><strong>CCNA Routing &amp; Switching (3 months) – New Horizons, Dhaka</strong><span class="yr">2016</span></li>
-          </ul>
+      <div class="about-right">
+        <div class="edu-card">
+          <h4>B.Sc. in Electronics &amp; Telecommunication Engineering</h4>
+          <p>Presidency University, Dhaka</p>
+          <span class="grade">CGPA 3.12 / 4.00 · Graduated 2014</span>
         </div>
-        <div>
-          <h2>Education</h2>
-          <ul class="cred-list">
-            <li><strong>B.Sc. in Electronics &amp; Telecommunication Engineering</strong><span class="yr">2014</span><small>Presidency University, Dhaka, CGPA 3.12 / 4.00</small></li>
-            <li><strong>Alim (HSC), Science</strong><span class="yr">2008</span><small>Naogaon, GPA 4.58 / 5.00</small></li>
-            <li><strong>Dakhil (SSC), Science</strong><span class="yr">2006</span><small>Bogura, GPA 3.67 / 5.00</small></li>
-            <li><strong>Languages</strong><span></span><small>Bengali (native), English (professional working proficiency)</small></li>
-          </ul>
+        <div class="edu-card" style="border-left-color:var(--amber)">
+          <h4>CBAP® Certification Training</h4>
+          <p>IIBA Bangladesh Chapter · Requirements Management, Strategy &amp; Solution Analysis</p>
+          <span class="grade" style="color:var(--amber2);background:rgba(245,158,11,.12)">Dec 2024 – Feb 2025</span>
+        </div>
+        <div class="edu-card" style="border-left-color:var(--sky)">
+          <h4>Data Analytics with Excel &amp; Power BI</h4>
+          <p>Ostad, Bangladesh · Power Query, Dashboard, DAX, SQL, Data Analytics with AI</p>
+          <span class="grade" style="color:var(--sky2);background:rgba(14,165,233,.12)">3 Months · 2025</span>
+        </div>
+        <div class="edu-card" style="border-left-color:var(--coral)">
+          <h4>AI for Professional Excellence</h4>
+          <p>Epyllion Group · Prompt Engineering, Generative AI for Professional Growth</p>
+          <span class="grade" style="color:var(--coral2);background:rgba(244,63,94,.12)">15 Days · 2026</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="wrap">
-      <div class="contact-wrap">
-        <div>
-          <h2>Let's talk about your next ERP project</h2>
-          <p class="sub">Open to Senior Business Analyst, ERP Implementation and ERP Functional Consultant roles in Bangladesh and with multinational companies. Send a message and I'll reply by email.</p>
-          <div class="c-list">
-            <a class="c-item" href="mailto:alamhossain.talukdar@gmail.com"><i class="fas fa-envelope"></i><div><span>Email</span><b>alamhossain.talukdar@gmail.com</b></div></a>
-            <a class="c-item" href="tel:+8801731844402"><i class="fas fa-phone"></i><div><span>Phone</span><b>+88 01731844402</b></div></a>
-            <div class="c-item"><i class="fas fa-location-dot"></i><div><span>Location</span><b>Tongi, Gazipur, Dhaka</b></div></div>
-          </div>
-          <div class="c-actions">
-            <a class="btn btn-gold" href="Alam_Hossain_CV.pdf" download><i class="fas fa-file-arrow-down"></i>Download CV (PDF)</a>
-            <div class="socials">
-              <a href="https://www.linkedin.com/in/alam-hossain-talukdar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://github.com/alamhossain-talukdar" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://www.facebook.com/alam.talukder" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+<div class="div-line"></div>
+
+<!-- EXPERIENCE -->
+<section class="section bg-alt" id="experience">
+  <div class="section-inner fade-in">
+    <div class="sec-eyebrow vi">Career Timeline</div>
+    <h2 class="sec-title">Professional Journey</h2>
+    <p class="sec-sub">10+ years of progressive growth — from Software Support Engineer to Senior Executive &amp; Business Analyst, leading ERP implementation across garments, textile &amp; sweater manufacturing.</p>
+    <div class="tl-wrap">
+      <div class="tl-left">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Jul 2022 – Present</div>
+          <div class="tl-card">
+            <div class="tl-role">Senior Executive &amp; Business Analyst</div>
+            <div class="tl-company">Epyllion Group · Ninakabbo, Gulshan Link Road, Dhaka</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Full Textile Process Digitalization</span><span class="tl-tag">Order Management → Finished Fabric Delivery</span><span class="tl-tag">Requirements Analysis</span><span class="tl-tag">BRD / FRS / DFD</span><span class="tl-tag">ERP Mockups</span><span class="tl-tag">UAT</span><span class="tl-tag">Selenium &amp; Katalon</span><span class="tl-tag">Jira</span><span class="tl-tag">Power BI</span>
             </div>
+            <div class="tl-kpi em">End-to-End Textile ERP · 15+ Modules · 40% Testing Effort ↓ · 600+ Users Trained</div>
           </div>
         </div>
-        <form class="mail-form" id="mailForm">
-          <h3>Send me an email</h3>
-          <div class="two">
-            <div><label for="fName">Your name</label><input id="fName" required autocomplete="name" /></div>
-            <div><label for="fEmail">Your email</label><input id="fEmail" type="email" required autocomplete="email" /></div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Jun 2017 – Dec 2019</div>
+          <div class="tl-card">
+            <div class="tl-role">Executive – ERP Implementation &amp; IT</div>
+            <div class="tl-company">Unifill Group · Hemayetpur, Savar, Dhaka</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Sweater Units</span><span class="tl-tag">9 ERP Modules</span><span class="tl-tag">MIS Reporting</span><span class="tl-tag">User Manuals</span><span class="tl-tag">IT Infrastructure</span>
+            </div>
+            <div class="tl-kpi am">Merchandising · Inventory · Planning · Production · Finance · HRMS · Knitting · Dyeing</div>
           </div>
-          <label for="fSubject">Subject</label>
-          <input id="fSubject" placeholder="e.g. Business Analyst position" required />
-          <label for="fMsg">Message</label>
-          <textarea id="fMsg" required placeholder="Write your message here"></textarea>
-          <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i>Send email</button>
-          <p class="form-note">Opens your email app with the message ready to send.</p>
+        </div>
+      </div>
+      <div class="tl-line"></div>
+      <div class="tl-right">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">Dec 2019 – Jun 2022</div>
+          <div class="tl-card">
+            <div class="tl-role">Executive – ERP Implementation</div>
+            <div class="tl-company">Epyllion Group · Ninakabbo, Gulshan Link Road, Dhaka</div>
+            <div class="tl-tags">
+              <span class="tl-tag">End-to-End Garments (GMT) ERP</span><span class="tl-tag">Order → Shipment</span><span class="tl-tag">Full-Cycle Implementation</span><span class="tl-tag">Master Data</span><span class="tl-tag">Process Mapping (Visio)</span><span class="tl-tag">Transaction Audit</span><span class="tl-tag">Functional Support</span>
+            </div>
+            <div class="tl-kpi vi">Garments ERP Order-to-Shipment Live · Promoted to Senior Executive &amp; BA (Jul 2022)</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-period">May 2015 – May 2017</div>
+          <div class="tl-card">
+            <div class="tl-role">Software Support Engineer</div>
+            <div class="tl-company">Spectrum Lanka Management Solution Ltd. · Niketan, Gulshan-1, Dhaka</div>
+            <div class="tl-tags">
+              <span class="tl-tag">Client ERP Rollouts</span><span class="tl-tag">Module Configuration</span><span class="tl-tag">Roles &amp; Permissions</span><span class="tl-tag">End-User Training</span><span class="tl-tag">Developer Coordination</span>
+            </div>
+            <div class="tl-kpi sk">3+ Companies · Garments, Sweater &amp; Textile</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div-line"></div>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-inner fade-in">
+    <div class="sec-eyebrow am">Portfolio</div>
+    <h2 class="sec-title">ERP Projects</h2>
+    <p class="sec-sub">Major ERP module implementations spanning Textile, Garments, Supply Chain, Finance, Laboratory, and Warehouse domains — each delivering measurable operational impact.</p>
+    <div class="projects-filter">
+      <button class="filt-btn active" data-cat="all">All Projects</button>
+      <button class="filt-btn" data-cat="garments">Garments ERP</button>
+      <button class="filt-btn" data-cat="textile">Textile ERP</button>
+      <button class="filt-btn" data-cat="supplychain">Supply Chain &amp; Warehouse</button>
+      <button class="filt-btn" data-cat="lab">R&amp;D &amp; Laboratory</button>
+      <button class="filt-btn" data-cat="analytics">BI &amp; Automation</button>
+      <button class="filt-btn" data-cat="enterprise">Finance &amp; Enterprise</button>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card c-em" data-cat="garments">
+        <div class="proj-icon-wrap pi-em">👕</div>
+        <h3>Garments ERP – Order to Shipment</h3>
+        <p>End-to-end digitization of the order-to-shipment flow — buyer order booking, merchandising costing, order forecast, commercial documentation, inventory, cutting, sewing &amp; finishing with real-time bundle traceability, WIP control, inline quality checks, and carton-to-shipment tracking across the full group of companies.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi em">↑ OTD</span>
+          <span class="pkpi em">↓ WIP</span>
+          <span class="pkpi em">DHU</span>
+          <span class="pkpi em">Quality</span>
+        </div>
+      </div>
+      <div class="proj-card c-vi" data-cat="textile">
+        <div class="proj-icon-wrap pi-vi">🧶</div>
+        <h3>Textile ERP – Order Management, Knitting, Dyeing &amp; Finishing</h3>
+        <p>Process mapping and module implementation from order management and greige knitting through dyeing and finishing to finished-fabric delivery, with production planning and quality control integrated.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi vi">Order → Finished Fabric</span>
+          <span class="pkpi vi">Planning</span>
+          <span class="pkpi vi">Quality</span>
+        </div>
+      </div>
+      <div class="proj-card c-am" data-cat="supplychain">
+        <div class="proj-icon-wrap pi-am">📦</div>
+        <h3>Supply Chain &amp; Inventory Digitization</h3>
+        <p>Digitized the full procure-to-store cycle — purchase requisition to GRN, barcode sticker generation for yarn, fabric rolls and accessories, scan-based receive, issue and transfer, roll-wise and lot-wise traceability, rack-wise real-time stock visibility and automated stock reports.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi am">Barcode Tracking</span>
+          <span class="pkpi am">Roll Traceability</span>
+          <span class="pkpi am">Real-time Stock</span>
+          <span class="pkpi am">Paperless Store</span>
+        </div>
+      </div>
+      <div class="proj-card c-sk" data-cat="lab">
+        <div class="proj-icon-wrap pi-sk">🔬</div>
+        <h3>Textile R&amp;D ERP – Concept to Buyer Order</h3>
+        <p>Complete end-to-end R&amp;D module with stage-wise tracking — concept development, sample inventory, knitting, formulation lab recipes, batch dyeing, CDA (chemical, dyes &amp; auxiliaries) inventory, finishing, fabric testing lab, costing and marketing — through to confirmed buyer order, with full traceability of every sample from concept to approval.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi sk">Concept → Order</span>
+          <span class="pkpi sk">Formulation Lab</span>
+          <span class="pkpi sk">Testing Lab</span>
+          <span class="pkpi sk">Sample Traceability</span>
+        </div>
+      </div>
+      <div class="proj-card c-co" data-cat="analytics">
+        <div class="proj-icon-wrap pi-co">🤖</div>
+        <h3>ERP Test &amp; Data-Entry Automation Suite</h3>
+        <p>Automated regression test suites and bulk data-entry scripts built with Selenium WebDriver (Python), Katalon Studio and AI tools; defect lifecycle managed in Jira with root-cause analysis and retesting.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi co">40% Effort ↓</span>
+          <span class="pkpi co">Selenium</span>
+          <span class="pkpi co">Katalon</span>
+        </div>
+      </div>
+      <div class="proj-card c-em" data-cat="analytics">
+        <div class="proj-icon-wrap pi-em">📊</div>
+        <h3>Power BI MIS Dashboards</h3>
+        <p>8+ interactive Power BI dashboards and Excel MIS reporting suites for Order Forecast, Production, Sales and Inventory — improving management decision-making speed by 25–30%.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi em">8+ Dashboards</span>
+          <span class="pkpi em">DAX</span>
+          <span class="pkpi em">25–30% Faster Decisions</span>
+        </div>
+      </div>
+      <div class="proj-card c-vi" data-cat="garments">
+        <div class="proj-icon-wrap pi-vi">🧥</div>
+        <h3>Sweater ERP Rollout – Unifill Group</h3>
+        <p>Multi-module ERP implementation across sweater manufacturing units — configuring and aligning Merchandising, Inventory, Planning, Commercial, Production, Finance, HRMS, Knitting and Dyeing.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi vi">9 Modules</span>
+          <span class="pkpi vi">MIS Reports</span>
+          <span class="pkpi vi">User Manuals</span>
+        </div>
+      </div>
+      <div class="proj-card c-am" data-cat="enterprise">
+        <div class="proj-icon-wrap pi-am">🏢</div>
+        <h3>HRMS, Payroll &amp; Asset Management</h3>
+        <p>Functional implementation and support of enterprise modules — HRMS, payroll and asset management — with user stories, acceptance criteria and post-go-live support for group-wide adoption.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi am">HRMS</span>
+          <span class="pkpi am">Payroll</span>
+          <span class="pkpi am">Assets</span>
+        </div>
+      </div>
+      <div class="proj-card c-sk" data-cat="enterprise">
+        <div class="proj-icon-wrap pi-sk">🧩</div>
+        <h3>Client ERP Implementations – Spectrum Lanka</h3>
+        <p>End-to-end ERP solutions delivered for 3+ companies in the garments, sweater and textile industries — module configuration, business workflows, user access, roles, permissions and training.</p>
+        <div class="proj-kpi-row">
+          <span class="pkpi sk">3+ Clients</span>
+          <span class="pkpi sk">Workflow Config</span>
+          <span class="pkpi sk">Training</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div-line"></div>
+
+<!-- SKILLS -->
+<section class="section bg-alt" id="skills">
+  <div class="section-inner fade-in">
+    <div class="sec-eyebrow sk">Expertise</div>
+    <h2 class="sec-title">Skills Dashboard</h2>
+    <p class="sec-sub">Technical and business competencies developed through hands-on ERP implementation, business analysis, testing and MIS reporting over 10+ years.</p>
+    <div class="skills-wrap">
+      <div class="skill-group">
+        <h3>Technical Skills</h3>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">⚙️ ERP Implementation &amp; Configuration</span><span class="skill-pct" style="color:var(--emerald)">95%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-em" data-w="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">📗 Advanced Excel &amp; MIS Reporting</span><span class="skill-pct" style="color:var(--emerald)">92%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-em" data-w="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">📈 Power BI (DAX, Power Query)</span><span class="skill-pct" style="color:var(--sky2)">85%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-sk" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">🗄️ SQL &amp; Data Validation</span><span class="skill-pct" style="color:var(--sky2)">75%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-sk" data-w="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">🤖 Selenium (Python) / Katalon Automation</span><span class="skill-pct" style="color:var(--violet2)">78%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-vi" data-w="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">🗺 MS Visio &amp; Process Mapping</span><span class="skill-pct" style="color:var(--amber2)">88%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-am" data-w="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">✨ Generative AI &amp; AI-Assisted Interactive Dashboards</span><span class="skill-pct" style="color:var(--amber2)">85%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-am" data-w="85"></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Business Skills</h3>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">📋 Business Analysis &amp; Requirements</span><span class="skill-pct" style="color:var(--emerald)">95%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-em" data-w="95"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">🔁 AS-IS / TO-BE &amp; Gap Analysis</span><span class="skill-pct" style="color:var(--emerald)">92%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-em" data-w="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">📦 Inventory Control</span><span class="skill-pct" style="color:var(--amber2)">93%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-am" data-w="93"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">📅 Production Planning</span><span class="skill-pct" style="color:var(--amber2)">90%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-am" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">🤝 Stakeholder Management</span><span class="skill-pct" style="color:var(--sky2)">90%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-sk" data-w="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">🗂 Project Management</span><span class="skill-pct" style="color:var(--violet2)">88%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-vi" data-w="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span class="skill-name">👥 User Training &amp; Change Management</span><span class="skill-pct" style="color:var(--violet2)">82%</span></div>
+          <div class="skill-track"><div class="skill-fill sf-vi" data-w="82"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-chip te"><div class="tool-emoji">📊</div><div class="tool-name">Power BI</div></div>
+      <div class="tool-chip tv"><div class="tool-emoji">📗</div><div class="tool-name">MS Excel</div></div>
+      <div class="tool-chip ta"><div class="tool-emoji">🗄️</div><div class="tool-name">SQL</div></div>
+      <div class="tool-chip ts"><div class="tool-emoji">🎯</div><div class="tool-name">Jira</div></div>
+      <div class="tool-chip te"><div class="tool-emoji">🤖</div><div class="tool-name">Selenium (Python) &amp; Katalon</div></div>
+      <div class="tool-chip tv"><div class="tool-emoji">📱</div><div class="tool-name">Barcode / PDA Tracking</div></div>
+      <div class="tool-chip ta"><div class="tool-emoji">🔷</div><div class="tool-name">MS Visio</div></div>
+      <div class="tool-chip ts"><div class="tool-emoji">✨</div><div class="tool-name">Generative AI</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="div-line"></div>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+  <div class="section-inner fade-in">
+    <div class="sec-eyebrow co">Credentials</div>
+    <h2 class="sec-title">Certifications &amp; Training</h2>
+    <p class="sec-sub">Professional training in business analysis, data analytics, software quality assurance, AI productivity and networking.</p>
+    <div class="certs-grid">
+      <div class="cert-card cc1">
+        <div class="cert-badge-wrap cb1">🏆</div>
+        <h3>CBAP® – Certified Business Analysis Professional Training</h3>
+        <p>Requirements management, strategy analysis and solution evaluation aligned with the IIBA BABOK® Guide.</p>
+        <span class="cert-org co1">IIBA Bangladesh Chapter · Dec 2024 – Feb 2025</span>
+      </div>
+      <div class="cert-card cc2">
+        <div class="cert-badge-wrap cb2">📊</div>
+        <h3>Data Analytics with Excel &amp; Power BI</h3>
+        <p>Power Query, dashboard design, DAX, SQL and data analytics with AI — 3-month hands-on program.</p>
+        <span class="cert-org co2">Ostad · 2025</span>
+      </div>
+      <div class="cert-card cc3">
+        <div class="cert-badge-wrap cb3">🧪</div>
+        <h3>SQA &amp; Test Management</h3>
+        <p>Functional and regression testing, test case design, defect management and test automation fundamentals.</p>
+        <span class="cert-org co3">Ostad · 2025</span>
+      </div>
+      <div class="cert-card cc1">
+        <div class="cert-badge-wrap cb1">✨</div>
+        <h3>AI for Professional Excellence</h3>
+        <p>Prompt engineering, generative AI and AI tools for professional growth and business productivity — 15-day program.</p>
+        <span class="cert-org co1">Epyllion Group · Aug – Sep 2026</span>
+      </div>
+      <div class="cert-card cc2">
+        <div class="cert-badge-wrap cb2">🌐</div>
+        <h3>CCNA Routing &amp; Switching</h3>
+        <p>Cisco networking fundamentals — routing, switching, IP addressing and network troubleshooting.</p>
+        <span class="cert-org co2">New Horizons CLC · Mar – Jun 2016</span>
+      </div>
+      <div class="cert-card cc3">
+        <div class="cert-badge-wrap cb3">🎓</div>
+        <h3>B.Sc. in Electronics &amp; Telecommunication Engineering</h3>
+        <p>Four-year engineering degree with a strong foundation in systems, logic and problem solving.</p>
+        <span class="cert-org co3">Presidency University · 2014</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div-line"></div>
+
+<!-- ACHIEVEMENTS -->
+<section class="section bg-alt" id="achievements">
+  <div class="section-inner fade-in">
+    <div class="sec-eyebrow em">Impact</div>
+    <h2 class="sec-title">Key Career Achievements</h2>
+    <p class="sec-sub">Quantified results from 10+ years of ERP implementation, business analysis, automation and digital adoption — the numbers behind the roles.</p>
+    <div class="pubs-grid">
+      <div class="pub-card">
+        <div class="pub-num">01</div>
+        <h3>End-to-End RMG &amp; Textile Digitalization</h3>
+        <p>Implemented and optimized 15+ ERP modules across garments, textile and sweater manufacturing — streamlining workflows from order management to shipment, and from knitting to finished-fabric delivery.</p>
+        <div class="pub-meta">
+          <span class="pub-tag">15+ Modules</span>
+          <span class="pub-tag">Order → Shipment</span>
+          <span class="pub-tag">Knitting → Finished Fabric</span>
+        </div>
+      </div>
+      <div class="pub-card">
+        <div class="pub-num">02</div>
+        <h3>40% Process &amp; Testing Automation</h3>
+        <p>Cut manual data-entry and regression testing effort by 40% by automating repetitive workflows with Selenium WebDriver (Python), Katalon Studio and AI tools.</p>
+        <div class="pub-meta">
+          <span class="pub-tag">40% Effort ↓</span>
+          <span class="pub-tag">Selenium · Katalon</span>
+          <span class="pub-tag">AI Automation</span>
+        </div>
+      </div>
+      <div class="pub-card">
+        <div class="pub-num">03</div>
+        <h3>KPI &amp; Management BI Reporting</h3>
+        <p>Built 8+ interactive Power BI dashboards and Excel MIS reporting suites for Production, Sales and Inventory — giving leadership real-time visibility into operational performance.</p>
+        <div class="pub-meta">
+          <span class="pub-tag">8+ Dashboards</span>
+          <span class="pub-tag">Real-time KPI</span>
+          <span class="pub-tag">Power BI · Excel</span>
+        </div>
+      </div>
+      <div class="pub-card">
+        <div class="pub-num">04</div>
+        <h3>600+ Users Trained &amp; Adopted</h3>
+        <p>Authored SOPs and user manuals, and led structured training programs across manufacturing units — driving smooth change management and group-wide digital adoption.</p>
+        <div class="pub-meta">
+          <span class="pub-tag">600+ Users</span>
+          <span class="pub-tag">SOPs &amp; Manuals</span>
+          <span class="pub-tag">Change Management</span>
+        </div>
+      </div>
+      <div class="pub-card">
+        <div class="pub-num">05</div>
+        <h3>Bridged Business &amp; Technology from Requirement to Delivery</h3>
+        <p>Acted as the single point of contact between department heads, senior management and the development team — translating complex factory and corporate requirements into BRDs, FRS documents, DFDs, UI mockups and user stories, securing formal stakeholder sign-off before build, and owning the Jira defect lifecycle so every release went live on the agreed business rules, with functional gaps and process bottlenecks resolved before go-live.</p>
+        <div class="pub-meta">
+          <span class="pub-tag">BRD · FRS · DFD</span>
+          <span class="pub-tag">Stakeholder Sign-off</span>
+          <span class="pub-tag">Jira Defect Lifecycle</span>
+        </div>
+      </div>
+      <div class="pub-card">
+        <div class="pub-num">06</div>
+        <h3>Delivered ERP for 5+ Companies Across Three Organizations</h3>
+        <p>Built a proven track record of repeat go-lives — implemented ERP end-to-end for 3+ client companies in garments, sweater and textile at Spectrum Lanka, rolled out 9 integrated modules across Unifill Group's sweater units, then led group-wide implementation at Epyllion — earning promotion from Executive to Senior Executive &amp; Business Analyst in July 2022.</p>
+        <div class="pub-meta">
+          <span class="pub-tag">3+ Client Go-Lives</span>
+          <span class="pub-tag">9-Module Rollout</span>
+          <span class="pub-tag">Promoted 2022</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="div-line"></div>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-inner fade-in">
+    <div class="sec-eyebrow vi">Get in Touch</div>
+    <h2 class="sec-title">Contact Me</h2>
+    <p class="sec-sub">Open to Senior Business Analyst, ERP Project Lead / Manager, ERP Implementation and ERP Functional Consultant roles in Bangladesh and with multinational companies — as well as ERP advisory and collaboration.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-cards">
+          <div class="cc-card">
+            <div class="cc-icon ci1">📧</div>
+            <div><div class="cc-label">Email</div><div class="cc-val"><a href="mailto:alamhossain.talukdar@gmail.com">alamhossain.talukdar@gmail.com</a></div></div>
+          </div>
+          <div class="cc-card">
+            <div class="cc-icon ci2">📱</div>
+            <div><div class="cc-label">Phone / WhatsApp</div><div class="cc-val"><a href="tel:+8801731844402">+880 1731-844402</a></div></div>
+          </div>
+          <div class="cc-card">
+            <div class="cc-icon ci3">📍</div>
+            <div><div class="cc-label">Location</div><div class="cc-val">Tongi, Gazipur, Dhaka, Bangladesh</div></div>
+          </div>
+          <div class="cc-card">
+            <div class="cc-icon ci4">🏢</div>
+            <div><div class="cc-label">Current Role</div><div class="cc-val">Sr. Executive &amp; Business Analyst, Epyllion Group</div></div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a class="soc-btn" href="https://www.linkedin.com/in/alam-hossain-talukdar/" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a class="soc-btn" href="https://github.com/alamhossain-talukdar" target="_blank" rel="noopener">💻 GitHub</a>
+          <a class="soc-btn" href="https://www.facebook.com/alam.talukder" target="_blank" rel="noopener">👤 Facebook</a>
+          <a class="soc-btn" href="Alam_Hossain_CV.pdf" target="_blank" rel="noopener">📄 Download CV</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <h3>Send a Message</h3>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="Full name" required/></div>
+            <div class="form-group"><label>Company</label><input type="text" name="company" placeholder="Organization"/></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required/></div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select name="subject">
+              <option value="">Select a topic...</option>
+              <option>ERP Implementation Consulting</option>
+              <option>Business Analysis / Requirements</option>
+              <option>Power BI &amp; MIS Reporting</option>
+              <option>Senior BA / Job Opportunity</option>
+              <option>ERP Functional Consulting</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea name="message" placeholder="Tell me about your project or opportunity..." required></textarea></div>
+          <button class="submit-btn" type="submit">Send Message →</button>
         </form>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
-<footer>© <span id="yr">2026</span> Md. Alam Hossain</footer>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Md. Alam Hossain</div>
+    <div class="footer-copy">© 2026 Md. Alam Hossain · Business Analyst &amp; ERP Implementation Professional · Dhaka, Bangladesh</div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.linkedin.com/in/alam-hossain-talukdar/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
 
 <script>
-  (function(){
-    var btn=document.querySelector('.menu-btn'), nav=document.getElementById('nav');
-    btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);});
-    nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded',false);});});
-    document.getElementById('yr').textContent=new Date().getFullYear();
-    document.getElementById('mailForm').addEventListener('submit',function(e){
-      e.preventDefault();
-      var v=function(id){return document.getElementById(id).value.trim();};
-      var body=v('fMsg')+'\n\n- '+v('fName')+' ('+v('fEmail')+')';
-      window.location.href='mailto:alamhossain.talukdar@gmail.com?subject='+encodeURIComponent(v('fSubject'))+'&body='+encodeURIComponent(body);
+// Mobile menu
+const btn = document.getElementById('menuBtn');
+const menu = document.getElementById('mobileMenu');
+btn.addEventListener('click', () => {
+  menu.classList.toggle('open');
+  btn.textContent = menu.classList.contains('open') ? '✕' : '☰';
+});
+menu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => { menu.classList.remove('open'); btn.textContent = '☰'; });
+});
+
+// Animated counters
+function animateCounter(el, target, suffix) {
+  let val = 0;
+  const step = Math.ceil(target / 50);
+  const iv = setInterval(() => {
+    val = Math.min(val + step, target);
+    el.textContent = val + (suffix || '');
+    if (val >= target) clearInterval(iv);
+  }, 35);
+}
+setTimeout(() => {
+  animateCounter(document.getElementById('s1'), 10, '+');
+  animateCounter(document.getElementById('s2'), 15, '+');
+  animateCounter(document.getElementById('s3'), 600, '+');
+  animateCounter(document.getElementById('s4'), 40, '%');
+  animateCounter(document.getElementById('s5'), 13, '+');
+  animateCounter(document.getElementById('s6'), 8, '+');
+}, 500);
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Skill bars animation
+const skillObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.skill-fill').forEach(bar => {
+        bar.style.width = bar.dataset.w + '%';
+      });
+      skillObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.skills-wrap').forEach(el => skillObs.observe(el));
+
+// Timeline items slide-in animation
+const tlObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const items = Array.from(e.target.parentElement.children);
+      const idx = items.indexOf(e.target);
+      e.target.style.transitionDelay = (idx * 0.15) + 's';
+      e.target.classList.add('visible');
+      tlObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.tl-item').forEach(el => tlObs.observe(el));
+
+// Project filter
+document.querySelectorAll('.filt-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filt-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const cat = this.dataset.cat;
+    document.querySelectorAll('.proj-card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
     });
-  })();
+  });
+});
+
+// Contact form -> auto email via FormSubmit
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = contactForm.querySelector('.submit-btn');
+    const originalText = btn.textContent;
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    const formData = new FormData(contactForm);
+    formData.append('_subject', 'New portfolio contact message');
+    formData.append('_captcha', 'false');
+    formData.append('_template', 'table');
+
+    fetch('https://formsubmit.co/ajax/alamhossain.talukdar@gmail.com', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: formData
+    })
+    .then(res => res.json())
+    .then(() => {
+      alert('Thank you! Your message has been received. I will respond within 24 hours.');
+      contactForm.reset();
+    })
+    .catch(() => {
+      alert('Sorry, something went wrong sending your message. Please email alamhossain.talukdar@gmail.com directly.');
+    })
+    .finally(() => {
+      btn.textContent = originalText;
+      btn.disabled = false;
+    });
+  });
+}
+
+// Smooth nav active state
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 80;
+  sections.forEach(s => {
+    if (y >= s.offsetTop && y < s.offsetTop + s.offsetHeight) {
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + s.id ? 'var(--emerald)' : '';
+      });
+    }
+  });
+});
 </script>
 </body>
 </html>
